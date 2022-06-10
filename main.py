@@ -3,7 +3,7 @@ import logging
 from unittest import skip
 from aiogram import  Dispatcher, Bot , executor, types
 from aiogram.types import CallbackQuery, Message
-
+# from telegram import InputFile
 
 import markups as nav
 import dbText as tex
@@ -133,9 +133,10 @@ async def leng_u(message: Message):
 # 
 @dp.callback_query_handler(text="Hokim")
 async def leng_uz(call: CallbackQuery):
-    photo=open("images\Hokim.jpg", 'rb')
+    
+   
     # await bot.send_photo(call.message.chat.id, photo=photo, caption='HOKIMIYAT 🏛 \n\n ☎️: +998-74-734-44-41 \n\n 📍Ushbu manzilga borish uchun \n                              👇👇👇', reply_markup=mp.hokimiyat)
-    await bot.send_photo(call.message.chat.id, photo)
+    await bot.send_photo(call.message.chat.id, photo=open("images\Hokim.jpg", 'rb'))
 
 @dp.callback_query_handler(text="Markaz")
 async def leng_uz(call: CallbackQuery):
