@@ -136,7 +136,7 @@ async def leng_uz(call: CallbackQuery):
     
    
     # await bot.send_photo(call.message.chat.id, photo=photo, caption='HOKIMIYAT 🏛 \n\n ☎️: +998-74-734-44-41 \n\n 📍Ushbu manzilga borish uchun \n                              👇👇👇', reply_markup=mp.hokimiyat)
-    await bot.send_photo(call.message.chat.id, photo=open("images\Hokim.jpg", 'rb'))
+    await bot.send_photo(call.message.chat.id, photo=open("Hokim.jpg", 'rb'))
 
 @dp.callback_query_handler(text="Markaz")
 async def leng_uz(call: CallbackQuery):
