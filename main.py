@@ -3,7 +3,7 @@ import logging
 from unittest import skip
 from aiogram import  Dispatcher, Bot , executor, types
 from aiogram.types import CallbackQuery, Message
-from telegram import InputFile
+
 
 import markups as nav
 import dbText as tex
